@@ -60,14 +60,11 @@ html
     color: aliceblue;
     font-family:var(--fontPolice-font-family) ;
 }
-.fa-dollar-sign 
+.fa-dollar-sign, .fa-lock
 {
     color: var(--couleurRouge-color);
 }
-.fa-lock
-{
-    color: var(--couleurRouge-color);
-}
+
 
 .header
 {
@@ -82,14 +79,14 @@ html
 .logo p
 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2.9em;
     font-family: sans-serif;
     font-weight: bold;
 }
 .logo span
 {
     color: var(--couleurRouge-color);
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 .search
 {
@@ -142,12 +139,23 @@ sup
     border-top: solid var(--couleurRouge-color);
     border-bottom: solid 0.1em  black;
     display: flex;
-    height: 3em;
+    height: 4em;
     gap: 1.8em;
     align-items: center;
     padding-left: 10em;
     font-family: var(--fontPolice-font-family);
+    font-size: 1.3em;
 }
+.menu:hover
+{
+    color: #D20024;
+    text-decoration:underline;
+}
+.un
+{
+    color: var(--couleurRouge-color);
+}
+
 
 .main-content
 {
@@ -172,9 +180,8 @@ sup
 }
 .rouge
 {
-    border-top: 355px solid var(--couleurRouge-color);
-	border-left: 50px solid var(--couleurRouge-color);
-	border-right: 350px solid transparent;
+    border-top: 22em solid var(--couleurRouge-color);
+	border-right: 30em solid transparent;
     height: 100%;
     opacity: 0.8;
 }
@@ -216,12 +223,10 @@ sup
 }
 .cad2
 {
-
     margin-left: 1.9em;
     margin-top: 1.3em;
     color: white; 
     font-family: var(--fontPolice-font-family);
-
 }
 .titre
 {
@@ -229,11 +234,22 @@ sup
     display: flex;
     justify-content: space-between;
 }
-.sous-menu
+h1
+{
+    font-family: var(--fontPolice-font-familyf);
+}
+.sous-menus
 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1em;
+    font-family: var(--fontPolice-font-family);
+    font-size: 1.2rem;
+}
+.sous-menu:hover
+{
+    color: var(--couleurRouge-color);
+    text-decoration:underline;
 }
 .cadre-two
 {
