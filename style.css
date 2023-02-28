@@ -3,21 +3,20 @@
     --couleurRouge-color : #D20024;
     --fontPolice-font-family: 'Montserrat';
 }
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html
 {
     font-size: 1rem;
 }
-
-.header
-{
-    height: 30em;
-    border: solid black;
-}
-
 .entete
 {
-   background: #1E1F29;
+   background: #4b4d5f;
     display: flex;
     justify-content: space-between;
     height: 3em;
@@ -31,7 +30,6 @@ html
     align-items: center;
     gap: 2em;
     align-items: center;
-    margin-left: 12em;
 }
 .contact1
 {
@@ -71,3 +69,212 @@ html
     color: var(--couleurRouge-color);
 }
 
+.header
+{
+    background: #1E1F29;
+    display: flex;
+    justify-content: space-between;
+    height: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    align-items: center;
+}
+.logo p
+{
+    color: white;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.logo span
+{
+    color: var(--couleurRouge-color);
+    font-size: 0.5em;
+}
+.search
+{
+    display: flex;
+    background: white;
+    border-radius: 1.2em;
+    height: 2.8em;
+    align-items: center;
+    gap: 1em;
+    padding-left:1em ;
+}
+input
+{
+    border: none;
+}
+.rech3
+{
+    background: #D20024;
+    height: 2.3em;
+    border-top-right-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    width: 100px;
+    padding-top: 0.5em;
+    text-align: center;
+    color: white;
+    font-family: var(--fontPolice-font-family);
+}
+
+.panier
+{
+    display: flex;
+    height: 2.8em;
+    align-items: center;
+    gap: 1em;
+    color: white;
+    font-family: var(--fontPolice-font-family);
+}
+.cart1
+{
+    margin-left: 1.8em;
+    margin-bottom: 0.6em;
+}
+sup
+{
+    color:var(--couleurRouge-color);
+
+}
+.nav-bar
+{
+    border-top: solid var(--couleurRouge-color);
+    border-bottom: solid 0.1em  black;
+    display: flex;
+    height: 3em;
+    gap: 1.8em;
+    align-items: center;
+    padding-left: 10em;
+    font-family: var(--fontPolice-font-family);
+}
+
+.main-content
+{
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-top: 2em;
+}
+.cadre-one
+{
+    display: flex;
+    justify-content: space-between;
+}
+.cadre1
+{
+    width: 31%;
+    height: 22em;
+    background-image: url(images/7b485713-d18b-4906-b44d-c79921f87c54.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+}
+.rouge
+{
+    border-top: 250px solid #f60a0a;
+	border-left: 50px solid #f60a0a;
+	border-right: 250px solid transparent;
+    height: 100%;
+}
+.cadre2
+{
+    width: 33%;
+    height: 22em;
+    background:url(images/481e6860-951e-488c-876a-99b2644a5620.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+}
+.cadre3
+{
+    width: 33%;
+    height: 22em;
+    background: url(images/f48d9679-b4b3-46b0-bc8c-556a7dc38a73.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+}
+.cad1
+{
+    margin-top: 3em;
+    margin-left: 1em;
+    color: white;
+    font-family: var(--fontPolice-font-family);
+    font-weight: bold;
+    width: 20%;
+    font-size: 2rem;
+}
+.cad2
+{
+
+    margin-left: 1.9em;
+    margin-top: 1.3em;
+    color: white; 
+    font-family: var(--fontPolice-font-family);
+}
+.titre
+{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.sous-menu
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cadre-two
+{
+    margin-top: 3em;
+    display: flex;
+
+}
+.card img
+{
+   width: 95%;
+}
+.card-title
+{
+    padding-top: 1em;
+    font-family: var(--fontPolice-font-family);
+    color: gray;
+    opacity: 0.5;
+    text-align: center;
+}
+h2
+{
+   text-align: center;
+   padding-top: 1em;
+}
+.prix
+{
+    padding-top: 1em;
+    text-align: center;
+}
+del
+{
+    font-family: var(--fontPolice-font-family);
+    color: gray;
+    opacity: 0.5;
+}
+.etoile
+{ 
+    padding-top: 1em;
+    color: var(--couleurRouge-color);
+    text-align: center;
+}
+.card-footer
+{ 
+    padding-top: 1em;
+    color: gray;
+    text-align: center;
+}
+.fa-heart
+{
+    margin-right: 1em;
+}
+.fa-eye
+{
+    margin-left: 1em;
+}
