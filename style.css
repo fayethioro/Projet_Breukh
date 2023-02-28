@@ -168,13 +168,20 @@ sup
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
+    position: relative;
 }
 .rouge
 {
-    border-top: 250px solid #f60a0a;
-	border-left: 50px solid #f60a0a;
-	border-right: 250px solid transparent;
+    border-top: 355px solid var(--couleurRouge-color);
+	border-left: 50px solid var(--couleurRouge-color);
+	border-right: 350px solid transparent;
     height: 100%;
+    opacity: 0.8;
+}
+.cad-position
+{
+    position: absolute;
+    top: 0;
 }
 .cadre2
 {
@@ -184,6 +191,7 @@ sup
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
+    position: relative;
 }
 .cadre3
 {
@@ -193,6 +201,7 @@ sup
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
+    position: relative;
 }
 .cad1
 {
@@ -203,6 +212,7 @@ sup
     font-weight: bold;
     width: 20%;
     font-size: 2rem;
+
 }
 .cad2
 {
@@ -211,6 +221,7 @@ sup
     margin-top: 1.3em;
     color: white; 
     font-family: var(--fontPolice-font-family);
+
 }
 .titre
 {
