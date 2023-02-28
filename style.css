@@ -1,6 +1,7 @@
 :root
 {
-    --couleurRouge-color : #D20024
+    --couleurRouge-color : #D20024;
+    --fontPolice-font-family: 'Montserrat';
 }
 
 html
@@ -13,3 +14,60 @@ html
     height: 30em;
     border: solid black;
 }
+
+.entete
+{
+   background: #1E1F29;
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+   padding-left: 10em;
+   padding-right: 10em;
+}
+.contact 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    align-items: center;
+    margin-left: 12em;
+}
+.contact1
+{
+    display: flex;
+    gap: 0.6em;
+    color: aliceblue;
+    font-family:var(--fontPolice-font-family) ;
+}
+
+.fa-phone  
+{
+    color: var(--couleurRouge-color);
+}
+.fa-envelope
+{
+    color: var(--couleurRouge-color);
+}
+.fa-location-dot
+{
+    color: var(--couleurRouge-color);
+}
+.compte
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    color: aliceblue;
+    font-family:var(--fontPolice-font-family) ;
+}
+.fa-dollar-sign 
+{
+    color: var(--couleurRouge-color);
+}
+.fa-lock
+{
+    color: var(--couleurRouge-color);
+}
+
