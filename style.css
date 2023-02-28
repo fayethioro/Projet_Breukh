@@ -1,0 +1,15 @@
+:root
+{
+    --couleurRouge-color : #D20024
+}
+
+html
+{
+    font-size: 1rem;
+}
+
+.header
+{
+    height: 30em;
+    border: solid black;
+}
