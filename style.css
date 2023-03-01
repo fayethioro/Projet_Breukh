@@ -38,16 +38,7 @@ html
     color: aliceblue;
     font-family:var(--fontPolice-font-family) ;
 }
-
-.fa-phone  
-{
-    color: var(--couleurRouge-color);
-}
-.fa-envelope
-{
-    color: var(--couleurRouge-color);
-}
-.fa-location-dot
+.fa-phone,  .fa-envelope, .fa-location-dot 
 {
     color: var(--couleurRouge-color);
 }
@@ -64,8 +55,6 @@ html
 {
     color: var(--couleurRouge-color);
 }
-
-
 .header
 {
     background: #1E1F29;
@@ -92,29 +81,39 @@ html
 {
     display: flex;
     background: white;
-    border-radius: 1.2em;
-    height: 2.8em;
     align-items: center;
     gap: 1em;
-    padding-left:1em ;
+    border-radius: 20px;
+}
+select
+{
+    width: 10em;
+    height: 3em; 
+    background: white;
+    border-top-left-radius:1em;
+    border-bottom-left-radius:1em;
+    border-right:solid gray 0.02em;
+    padding-left: 1em;
+    border-top: none;
+}
+select, input[type=button]
+{
+    font-family: var(--fontPolice-font-family);
 }
 input
 {
     border: none;
 }
-.rech3
+input[type=button]
 {
-    background: #D20024;
-    height: 2.3em;
-    border-top-right-radius: 1.2em;
-    border-bottom-right-radius: 1.2em;
-    width: 100px;
-    padding-top: 0.5em;
-    text-align: center;
+    background: var(--couleurRouge-color);
+    height: 3em;
+    width: 7em;
+    border-top-right-radius:1em;
+    border-bottom-right-radius:1em;
     color: white;
-    font-family: var(--fontPolice-font-family);
+    font-weight: 700;
 }
-
 .panier
 {
     display: flex;
@@ -132,12 +131,11 @@ input
 sup
 {
     color:var(--couleurRouge-color);
-
 }
 .nav-bar
 {
     border-top: solid var(--couleurRouge-color);
-    border-bottom: solid 0.1em  black;
+    border-bottom: solid 0.01em  gray;
     display: flex;
     height: 4em;
     gap: 1.8em;
@@ -155,8 +153,6 @@ sup
 {
     color: var(--couleurRouge-color);
 }
-
-
 .main-content
 {
     padding-left: 10em;
@@ -177,56 +173,65 @@ sup
     background-repeat: no-repeat;
     background-color: #f7f7f7;
     position: relative;
+    overflow: hidden;
 }
-.rouge
-{
-    border-top: 22em solid var(--couleurRouge-color);
-	border-right: 30em solid transparent;
+.cadre1::after, .cadre2::after, .cadre3::after
+{   content: "";
+    background: var(--couleurRouge-color);
+    position: absolute;
     height: 100%;
     opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-55deg) translate(-2em,-12em);
 }
 .cad-position
 {
     position: absolute;
     top: 0;
+    z-index: 100;
 }
 .cadre2
 {
-    width: 33%;
-    height: 22em;
     background:url(images/481e6860-951e-488c-876a-99b2644a5620.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
-    position: relative;
 }
-.cadre3
+.cadre2, .cadre3
 {
     width: 33%;
     height: 22em;
+    position: relative;
+    overflow: hidden;
+}
+.cadre3
+{
     background: url(images/f48d9679-b4b3-46b0-bc8c-556a7dc38a73.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
-    position: relative;
 }
 .cad1
 {
     margin-top: 3em;
     margin-left: 1em;
-    color: white;
-    font-family: var(--fontPolice-font-family);
     font-weight: bold;
     width: 20%;
     font-size: 2rem;
 
 }
+.cad1,.cad2
+{
+    color: white; 
+    font-family: var(--fontPolice-font-family);
+}
 .cad2
 {
     margin-left: 1.9em;
-    margin-top: 1.3em;
-    color: white; 
-    font-family: var(--fontPolice-font-family);
+    margin-top: 1.3em; 
 }
 .titre
 {
@@ -243,59 +248,53 @@ h1
     display: flex;
     align-items: center;
     gap: 1em;
-    font-family: var(--fontPolice-font-family);
     font-size: 1.2rem;
+    font-family: var(--fontPolice-font-familyf);
+    font-weight: bold;
 }
 .sous-menu:hover
 {
     color: var(--couleurRouge-color);
     text-decoration:underline;
 }
+.one
+{
+    color: var(--couleurRouge-color);
+}
 .cadre-two
 {
     margin-top: 3em;
     display: flex;
-
 }
 .card img
 {
    width: 95%;
 }
-.card-title
+.card-title, h2, .prix, .card-footer, .etoile
 {
-    padding-top: 1em;
-    font-family: var(--fontPolice-font-family);
-    color: gray;
-    opacity: 0.5;
     text-align: center;
-}
-h2
-{
-   text-align: center;
-   padding-top: 1em;
-}
-.prix
-{
     padding-top: 1em;
-    text-align: center;
 }
-del
+.card-title, .card-footer,  del
 {
-    font-family: var(--fontPolice-font-family);
     color: gray;
+    font-family: var(--fontPolice-font-family);
     opacity: 0.5;
 }
 .etoile
 { 
-    padding-top: 1em;
     color: var(--couleurRouge-color);
-    text-align: center;
+    position: relative;
 }
-.card-footer
-{ 
-    padding-top: 1em;
-    color: gray;
-    text-align: center;
+.etoile::before
+{
+     content: "";
+     border: solid 0.01em gray ; 
+     opacity: 0.5;
+     width: 130px;
+     transform: rotate(180deg) translate(10px , -8px);
+     position: absolute;
+     z-index: -12;
 }
 .fa-heart
 {
