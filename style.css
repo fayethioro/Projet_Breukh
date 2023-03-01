@@ -2,6 +2,7 @@
 {
     --couleurRouge-color : #D20024;
     --fontPolice-font-family: 'Montserrat';
+    --couleurBlanche-color:white
 }
 *
 {
@@ -67,7 +68,7 @@ html
 }
 .logo p
 {
-    color: white;
+    color: var(--couleurBlanche-color);
     font-size: 2.9em;
     font-family: sans-serif;
     font-weight: bold;
@@ -80,16 +81,16 @@ html
 .search
 {
     display: flex;
-    background: white;
+    background: var(--couleurBlanche-color);
     align-items: center;
     gap: 1em;
-    border-radius: 20px;
+    border-radius: 1.2em;
 }
 select
 {
     width: 10em;
     height: 3em; 
-    background: white;
+    background: var(--couleurBlanche-color);
     border-top-left-radius:1em;
     border-bottom-left-radius:1em;
     border-right:solid gray 0.02em;
@@ -111,7 +112,7 @@ input[type=button]
     width: 7em;
     border-top-right-radius:1em;
     border-bottom-right-radius:1em;
-    color: white;
+    color: var(--couleurBlanche-color);
     font-weight: 700;
 }
 .panier
@@ -120,7 +121,7 @@ input[type=button]
     height: 2.8em;
     align-items: center;
     gap: 1em;
-    color: white;
+    color: var(--couleurBlanche-color);
     font-family: var(--fontPolice-font-family);
 }
 .cart1
@@ -225,7 +226,7 @@ sup
 }
 .cad1,.cad2
 {
-    color: white; 
+    color: var(--couleurBlanche-color); 
     font-family: var(--fontPolice-font-family);
 }
 .cad2
@@ -239,9 +240,9 @@ sup
     display: flex;
     justify-content: space-between;
 }
-h1
+h1, .sous-menu, h2
 {
-    font-family: var(--fontPolice-font-familyf);
+    font-family: var(--fontPolice-font-family);
 }
 .sous-menus
 {
@@ -249,17 +250,12 @@ h1
     align-items: center;
     gap: 1em;
     font-size: 1.2rem;
-    font-family: var(--fontPolice-font-familyf);
     font-weight: bold;
 }
-.sous-menu:hover
+.sous-menu:hover, .one
 {
     color: var(--couleurRouge-color);
     text-decoration:underline;
-}
-.one
-{
-    color: var(--couleurRouge-color);
 }
 .cadre-two
 {
@@ -291,8 +287,8 @@ h1
      content: "";
      border: solid 0.01em gray ; 
      opacity: 0.5;
-     width: 130px;
-     transform: rotate(180deg) translate(10px , -8px);
+     width: 8em;
+     transform: rotate(180deg) translate(0.6em , 0.5em);
      position: absolute;
      z-index: -12;
 }
