@@ -290,7 +290,7 @@ h1, .sous-menu, h2
      position: absolute;
      opacity: 0.5;
      width: 40%;
-     transform: rotate(180deg)  translate(15% , -150%);
+     transform: rotate(180deg)  translate(15% , -0.5em);
      position: absolute;
      z-index: -12;
 }
