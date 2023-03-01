@@ -286,9 +286,10 @@ h1, .sous-menu, h2
 {
      content: "";
      border: solid 0.01em gray ; 
+     position: absolute;
      opacity: 0.5;
      width: 8em;
-     transform: rotate(180deg) translate(0.6em , 0.5em);
+     transform: rotate(180deg) translate(0.6em , -0.5em);
      position: absolute;
      z-index: -12;
 }
